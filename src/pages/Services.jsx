@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaCode, FaPaintBrush, FaMobileAlt, FaRocket, FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   useEffect(() => {
@@ -55,12 +56,12 @@ export default function Services() {
             We offer powerful solutions that help your business grow online through quality design and tech.
           </p>
 
-        <a href='/blogs'className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-300 text-white font-semibold px-6 py-3 rounded-full text-sm sm:text-base md:text-lg transition duration-300 group"
+        <Link to='/blogs'className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-300 text-white font-semibold px-6 py-3 rounded-full text-sm sm:text-base md:text-lg transition duration-300 group"
             data-aos="fade-up"
             data-aos-delay="200">
             Explore Blogs
             <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1 group-focus:translate-x-1 group-active:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </div>
 
