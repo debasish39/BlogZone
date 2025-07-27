@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="backdrop-blur-lg bg-white/10 border-b border-white/20 shadow-md fixed w-full top-0 left-0 z-50">
 
     <nav
-  className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center shadow-2xl"
+  className="max-w-9xl mx-auto px-4 py-4 flex justify-between items-center shadow-2xl"
   onClick={menuOpen ? () => setMenuOpen(false) : undefined}
 >
 
