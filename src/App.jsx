@@ -10,7 +10,7 @@ import SingleBlog from './components/SingleBlog'
 import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import NotFound from './pages/NotFound'
-
+import ClickSpark from './components/ClickSpark'
 const Layout = () => {
   const location = useLocation()
 
@@ -47,7 +47,15 @@ const Layout = () => {
 export default function App() {
   return (
     <BrowserRouter>
+    <ClickSpark
+  sparkColor='#FF6900'
+  sparkSize={26}
+  sparkRadius={3}
+  sparkCount={18}
+  duration={400}
+>
       <Layout />
+      </ClickSpark>
     </BrowserRouter>
   )
 }
